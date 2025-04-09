@@ -1,0 +1,823 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2025-04-09 04:17:02",
+    "containerVersion": {
+        "path": "accounts/6263849611/containers/203360440/versions/0",
+        "accountId": "6263849611",
+        "containerId": "203360440",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6263849611/containers/203360440",
+            "accountId": "6263849611",
+            "containerId": "203360440",
+            "name": "hk.co - GTM",
+            "publicId": "GTM-TN5GLVZM",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1736152174502",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6263849611/containers/203360440/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-TN5GLVZM"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "tagId": "42",
+                "name": "Google Tag G-L6NJDNV4MS",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "G-L6NJDNV4MS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "configSettingsVariable",
+                        "value": "{{Google Tag Configuration Settings}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "configSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "user_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - userId}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventSettingsVariable",
+                        "value": "{{Google Tag Event Settings}}"
+                    }
+                ],
+                "fingerprint": "1743748550442",
+                "firingTriggerId": [
+                    "48"
+                ],
+                "tagFiringOption": "UNLIMITED",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_NEEDED"
+                }
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "tagId": "47",
+                "name": "Google Analytics GA4 Event",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "getEcommerceDataFrom",
+                        "value": "dataLayer"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enhancedUserId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "userProperties",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "user_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{DLV - userId}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "login"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-L6NJDNV4MS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventSettingsVariable",
+                        "value": "{{Google Tag Event Settings}}"
+                    }
+                ],
+                "fingerprint": "1743748550443",
+                "firingTriggerId": [
+                    "48"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "triggerId": "43",
+                "name": "Email Click Trigger",
+                "type": "LINK_CLICK",
+                "autoEventFilter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{UTM Source}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "email"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1743666210623"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "triggerId": "44",
+                "name": "User Login Trigger",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "https://my.hk.co/signin"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "https://my.hk.co/dashboard"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1743666299714"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "triggerId": "48",
+                "name": "All Pages",
+                "type": "PAGEVIEW",
+                "fingerprint": "1743748550397"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "5",
+                "name": "URL_source",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "utm_source"
+                    }
+                ],
+                "fingerprint": "1736155735409",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "6",
+                "name": "URL_medium",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "utm_medium"
+                    }
+                ],
+                "fingerprint": "1736155777035",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "7",
+                "name": "URL_query",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "utm_campaign"
+                    }
+                ],
+                "fingerprint": "1736155810405",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "12",
+                "name": "UTM Source",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "UTM Source"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customUrlSource",
+                        "value": "{{Click URL}}"
+                    }
+                ],
+                "fingerprint": "1736160377841",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "13",
+                "name": "UTM Medium",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "UTM Medium"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customUrlSource",
+                        "value": "{{Click URL}}"
+                    }
+                ],
+                "fingerprint": "1736160430243",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "14",
+                "name": "UTM Campaign",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "UTM Campaign"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customUrlSource",
+                        "value": "{{Click URL}}"
+                    }
+                ],
+                "fingerprint": "1736160501805",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "15",
+                "name": "Google Tag Event Settings",
+                "type": "gtes",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "user_source"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{UTM Source}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "user_medium"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{UTM Medium}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "user_campaign"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{UTM Campaign}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1736160529954"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "16",
+                "name": "Google Tag Configuration Settings",
+                "type": "gtcs",
+                "fingerprint": "1736161141915"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "24",
+                "name": "Google Tag Event Settings 1",
+                "type": "gtes",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "https://www.hk.co/?utm_source=email&utm_medium=email&utm_campaign=15_cts_Oval_cut_D_FL"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Click URL}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "https://youtu.be/dzlpLyaT-vE?utm_source=email&utm_medium=email&utm_campaign=15_cts_Oval_cut_D_FL"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Click URL}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "userProperties",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1738046098775"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "32",
+                "name": "UserTracker",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    return ga.getAll()[0].get('clientId');\n}"
+                    }
+                ],
+                "fingerprint": "1738151773650"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "33",
+                "name": "Google Analytics Settings",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "G-XSS5DY2NVR{{Google Tag Event Settings 1}}"
+                    }
+                ],
+                "fingerprint": "1738152183403"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "37",
+                "name": "Data Layer Variable",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "user_id"
+                    }
+                ],
+                "fingerprint": "1739341521156",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "38",
+                "name": "Data Layer Variable session_id",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "session_id"
+                    }
+                ],
+                "fingerprint": "1739341546300",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "40",
+                "name": "User ID - Data Layer",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "userId"
+                    }
+                ],
+                "fingerprint": "1743658898519",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "45",
+                "name": "DLV - userId",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "userId"
+                    }
+                ],
+                "fingerprint": "1743669994658",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "variableId": "46",
+                "name": "JS - Capture User ID from Login",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    return window.localStorage.getItem('user_id') || null;\n}\n"
+                    }
+                ],
+                "fingerprint": "1743678945365",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "CLICK_TARGET",
+                "name": "Click Target"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "type": "VIDEO_URL",
+                "name": "Video URL"
+            }
+        ],
+        "fingerprint": "1744172222433",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6263849611/containers/203360440/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "templateId": "18",
+                "name": "GTM Monitoring in Google Analytics",
+                "fingerprint": "1743748550502",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"displayName\": \"GTM Monitoring in Google Analytics\",\n  \"categories\": [\n    \"TAG_MANAGEMENT\",\n    \"UTILITY\",\n    \"ANALYTICS\"\n  ],\n  \"description\": \"A template for setting up tag monitoring in Google Tag Manager and store result in a Google Analytics property (enhanced ecommerce)\",\n  \"__wm\": \"VGVtcGxhdGUtQXV0aG9yX0dvb2dsZS1UYWctTWFuYWdlci1Nb25pdG9yLVNpbW8tQWhhdmE\\u003d\",\n  \"securityGroups\": [],\n  \"id\": \"cvt_temp_public_id\",\n  \"type\": \"TAG\",\n  \"version\": 1,\n  \"brand\": {\n    \"displayName\": \"zjuul\",\n    \"id\": \"github.com_zjuul\"\n  },\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"help\": \"Use the code, including the UA- bit.\",\n    \"alwaysInSummary\": true,\n    \"valueValidators\": [\n      {\n        \"type\": \"GA_TRACKING_ID\",\n        \"errorMessage\": \"The field must be a valid UA property string (UA-12345-6)\"\n      }\n    ],\n    \"displayName\": \"Analytics Property to send to\",\n    \"simpleValueType\": true,\n    \"name\": \"uaCode\",\n    \"type\": \"TEXT\",\n    \"valueHint\": \"UA-123213-1\"\n  },\n  {\n    \"displayName\": \"Advanced Setup and Customisation\",\n    \"name\": \"advanced\",\n    \"groupStyle\": \"ZIPPY_CLOSED\",\n    \"type\": \"GROUP\",\n    \"subParams\": [\n      {\n        \"help\": \"If left blank, the Event Label used to store the hit is the timestamp. You can use something custom here, like the contents of the dataLayer.\",\n        \"displayName\": \"Event Label to use\",\n        \"simpleValueType\": true,\n        \"name\": \"customEventLabel\",\n        \"type\": \"TEXT\"\n      },\n      {\n        \"help\": \"If left blank, a timestamp + random number is used. \\nYou can use a variable with the client ID of the current visitor (beware of the 500 hits limit!), or your own random number.\",\n        \"alwaysInSummary\": true,\n        \"displayName\": \"Client ID to use\",\n        \"simpleValueType\": true,\n        \"name\": \"clientId\",\n        \"type\": \"TEXT\"\n      },\n      {\n        \"help\": \"If you select \\u003cstrong\\u003eNo\\u003c/strong\\u003e, details of all the tags that fired for any given hit are sent in a single GET request. If you select \\u003cstrong\\u003eYes\\u003c/strong\\u003e, you can choose the maximum number of tags per request, and the tag will automatically send multiple requests if necessary.\",\n        \"displayName\": \"Batch hits\",\n        \"simpleValueType\": true,\n        \"name\": \"batchHits\",\n        \"type\": \"RADIO\",\n        \"radioItems\": [\n          {\n            \"displayValue\": \"No\",\n            \"value\": \"no\"\n          },\n          {\n            \"displayValue\": \"Yes\",\n            \"help\": \"\",\n            \"value\": \"yes\",\n            \"subParams\": [\n              {\n                \"help\": \"Enter the maximum number of tags per request that will be dispatched to the endpoint. If necessary, multiple requests will be made.\",\n                \"valueValidators\": [\n                  {\n                    \"type\": \"POSITIVE_NUMBER\"\n                  }\n                ],\n                \"displayName\": \"Maximum number of tags per request\",\n                \"defaultValue\": 10,\n                \"simpleValueType\": true,\n                \"name\": \"maxTags\",\n                \"type\": \"TEXT\"\n              }\n            ]\n          }\n        ]\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n// Require the necessary APIs\nconst addEventCallback = require('addEventCallback');\nconst readFromDataLayer = require('copyFromDataLayer');\nconst sendPixel = require('sendPixel');\nconst getTimestamp = require('getTimestamp');\nconst getUrl = require('getUrl');\nconst encodeUriComponent = require('encodeUriComponent');\nconst generateRandom = require('generateRandom');\n\n// Get the dataLayer event that triggered the tag\nconst event = readFromDataLayer('event');\n\nconst eventTimestamp = getTimestamp(); // used for eventlabel, transaction id, anti-cache\nconst uaCode = data.uaCode;\nconst batchHits = data.batchHits === 'yes';\nconst maxTags = data.maxTags;\nconst hostName = getUrl('host'); // used for product category, affiliation\nconst pathName = encodeUriComponent(getUrl('path'));\nconst fullHost = getUrl(); // location field\nconst eventLabel = data.customEventLabel ? data.customEventLabel : eventTimestamp;\nconst clientId = data.clientId ? data.clientId : eventTimestamp +' '+ generateRandom(1,999);\n\n// measurement protocol prep\nlet endPoint = 'https://www.google-analytics.com/collect?z=' + eventTimestamp +\n    '&v=1' +\n    '&tid=' + uaCode +\n    '&cid=' + clientId +\n    '&t=event' +\n    '&dp=' + pathName +\n    '&dh=' + hostName +\n    '&dl=' + encodeUriComponent(fullHost) +\n    '&pa=purchase' +\n    '&ta=' + hostName + // affiliation\n    '&ec=gtm_monitor'\n;\n\nlet eventValue = 0;\n\n// Utility for splitting an array into multiple arrays of given size\nconst splitToBatches = (arr, size) => {\n  const newArr = [];\n  for (let i = 0, len = arr.length; i < len; i += size) {\n    newArr.push(arr.slice(i, i + size));\n  }\n  return newArr;\n};\n\n// The addEventCallback gets two arguments: container ID and a data object with an array of tags that fired\naddEventCallback((ctid, eventData) => {\n\n  // Filter out the monitoring tag itself\n  const tags = eventData.tags.filter(t => t.exclude !== 'true');\n  \n  // If batching is enabled, split the tags into batches of the given size\n  const batches = batchHits ? splitToBatches(tags, maxTags) : [tags];\n  \n  // For each batch, build a payload and dispatch to the endpoint as a GET request\n  batches.forEach(tags => {\n    let payload = '&ea=' + encodeUriComponent(event) + '&ti=' + eventTimestamp +\n        '&el=' + eventLabel;\n    tags.forEach((tag, idx) => {\n      eventValue = eventValue + 1;\n      const tagPrefix = '&pr' + (idx + 1);\n      \n      let tagName = tag.name ? tag.name : 'unnamed tag with ID: ' + tag.id;\n      \n      payload +=\n        tagPrefix + 'id=' + tag.id +                        // SKU\n        tagPrefix + 'nm=' + encodeUriComponent(tagName) +   // product name\n        tagPrefix + 'va=' + tag.status +                    // variant\n        tagPrefix + 'ca=' + event +                         // category\n        tagPrefix + 'br=' + pathName +                      // brand\n        tagPrefix + 'qt=1' + \t\t\t\t\t\t\t\t// quantity = 1\n        tagPrefix + 'pr=' + tag.executionTime + \".00\";      // time = money\n    });\n    payload += '&tr=' + eventValue + \".00\" +   // trans.revenue = nr of prods\n    \t '&ev=' + eventValue;                  // event value = nr of products\n    sendPixel(endPoint + payload, null, null);\n  });\n});\n\n// After adding the callback, signal tag completion\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_data_layer\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keyPatterns\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"event\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"send_pixel\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"urls\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"https://www.google-analytics.com/collect*\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_event_metadata\",\n        \"versionId\": \"1\"\n      },\n      \"param\": []\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"get_url\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"urlParts\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        },\n        {\n          \"key\": \"queriesAllowed\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___NOTES___\n\nCreated on 11/07/2019, 09:11:59\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "zjuul",
+                    "repository": "gtm_monitoring_tag",
+                    "version": "ac095485c652dd3139ee59be917c5165b7787c3a",
+                    "signature": "10d98b2746ea743d98340ef240bb35da2604f2f7c6517a434c3c046df8143048"
+                }
+            },
+            {
+                "accountId": "6263849611",
+                "containerId": "203360440",
+                "templateId": "20",
+                "name": "GA4 for javascript interface.",
+                "fingerprint": "1743748550495",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"GA4 for javascript interface.\",\n  \"brand\": {\n    \"id\": \"github.com_pluszero-global\",\n    \"displayName\": \"pluszero-global\",\n    \"thumbnail\": \"data:image/png;base64,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\"\n  },\n  \"description\": \"This is the template for javascript interface on android and iOS env.  \\nIf you want to use this template perfectly, Please use another variable template Pluszero-global provide.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"event_name\",\n    \"displayName\": \"Event Name\",\n    \"simpleValueType\": true,\n    \"help\": \"GA4 Event name\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"user_properties\",\n    \"displayName\": \"User Property Variable\",\n    \"simpleValueType\": true,\n    \"help\": \"You can use this Table to share user properties with tags. If you want to use this, get value call \\\"GA4 shared parameters for GA4 for javascript interface\\\"\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"shared_parameters\",\n    \"displayName\": \"Shared Parameters\",\n    \"simpleValueType\": true,\n    \"help\": \"You can use this Table to share user properties with tags. If you want to use this, get value call \\\"GA4 user properties for GA4 for javascript interface\\\"\"\n  },\n  {\n    \"type\": \"SIMPLE_TABLE\",\n    \"name\": \"parameters\",\n    \"displayName\": \"Parameters\",\n    \"simpleTableColumns\": [\n      {\n        \"defaultValue\": \"\",\n        \"displayName\": \"key\",\n        \"name\": \"key\",\n        \"type\": \"TEXT\",\n        \"selectItems\": []\n      },\n      {\n        \"defaultValue\": \"\",\n        \"displayName\": \"Value\",\n        \"name\": \"value\",\n        \"type\": \"TEXT\",\n        \"selectItems\": []\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst log = require('logToConsole');\nconst makeTableMap = require('makeTableMap');\nconst query = require('queryPermission');\nconst createQueue = require('createQueue');\nconst dataLayerPush = createQueue('dataLayer');\nconst createArgumentsQueue = require('createArgumentsQueue');\nconst copyFromWindow = require('copyFromWindow');\nconst setInWindow = require('setInWindow');\nconst injectScript = require('injectScript');\nconst getTimestampMillis = require('getTimestampMillis');\n\nconst measurementId = data.measurementId;\nconst event_name = data.event_name;\n\nlet parameters = data.parameters ? makeTableMap(data.parameters, 'key', 'value') : undefined;\nlet user_properties = data.user_properties;\nlet shared_parameters = data.shared_parameters;\n\nlet log_event_function = copyFromWindow(\"logEvent\");\nlet user_property_function = copyFromWindow(\"setUserProperty\");\n\nif(user_properties){\n  user_property_function(user_properties);\n}\n\nif(parameters || shared_parameters){\n  if(!parameters && shared_parameters) parameters = shared_parameters;\n  else if(!shared_parameters && parameters) shared_parameters = parameters;\n  else {\n    for(var key in shared_parameters){\n      parameters[key] = shared_parameters[key];\n    }\n  }\n  log_event_function(event_name, parameters);\n} else{\n  log_event_function(event_name, {});\n}\n\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"logging\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"environments\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"debug\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"dataLayer\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"logEvent\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"setUserProperty\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"inject_script\",\n        \"versionId\": \"1\"\n      },\n      \"param\": []\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios:\n- name: Quick Test\n  code: runCode();\nsetup: ''\n\n\n___NOTES___\n\nCreated on 2021. 1. 4. 오전 11:41:36\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "pluszero-global",
+                    "repository": "GA4-for-javascript-interface",
+                    "version": "205c5485f14c8eb945f432a7b9e7e1109fe6fdfb",
+                    "signature": "ce3b49dc40ee28e5c8586fe370a402b422339292a2b9fac4630a9a142e712298"
+                }
+            }
+        ]
+    }
+}
